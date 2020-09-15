@@ -1,6 +1,6 @@
 ![Logo](logo.png)
 # TradingView UDF provider
-[![Build Status](https://travis-ci.org/Marfusios/bitfinex-client-websocket.svg?branch=master)](https://travis-ci.org/Marfusios/bitfinex-client-websocket) [![NuGet version](https://badge.fury.io/nu/TradingView.Udf.Provider.svg)](https://badge.fury.io/nu/TradingView.Udf.Provider) [![NuGet downloads](https://img.shields.io/nuget/dt/TradingView.Udf.Provider)](https://www.nuget.org/packages/TradingView.Udf.Provider)
+![build](https://github.com/Marfusios/tradingview-udf-provider/workflows/.NET%20Core/badge.svg?branch=master) [![NuGet version](https://badge.fury.io/nu/TradingView.Udf.Provider.svg)](https://badge.fury.io/nu/TradingView.Udf.Provider) [![NuGet downloads](https://img.shields.io/nuget/dt/TradingView.Udf.Provider)](https://www.nuget.org/packages/TradingView.Udf.Provider)
 
 This is a C# implementation of the TradingView UDF data provider (via HTTP API). 
 It's a backend server application that provides data for standalone charting library. 
