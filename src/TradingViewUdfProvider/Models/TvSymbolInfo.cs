@@ -181,6 +181,24 @@ namespace TradingViewUdfProvider.Models
 
         /// <summary>
         /// Default: false 
+        /// Boolean value showing whether the symbol includes seconds in the historical data. 
+        /// If it's false then all buttons for resolutions that include seconds will be disabled for this particular symbol. 
+        /// If it is set to true, all resolutions that are supplied directly by the data feed must be provided in seconds_multipliers array. 
+        /// </summary>
+        [JsonPropertyName("has_seconds")]
+        public bool? HasSeconds { get; set; }
+
+        /// <summary>
+        /// Default: [] 
+        /// It is an array containing resolutions that include seconds (excluding postfix) that the data feed provides. 
+        /// E.g., if the data feed supports resolutions such as ["1S", "5S", "15S"], but has 1-second bars for some symbols 
+        /// then you should set seconds_multipliers of this symbol to [1]. This will make Charting Library build 5S and 15S resolutions by itself. 
+        /// </summary>
+        [JsonPropertyName("seconds_multipliers")]
+        public string[] SecondsMultipliers { get; set; }
+
+        /// <summary>
+        /// Default: false 
         /// The boolean value showing whether data feed has its own weekly and monthly resolution bars or not. 
         /// If has_weekly_and_monthly = false then Charting Library will build the respective resolutions using daily bars by itself. If not, then it will request those bars from the data feed. 
         /// </summary>
