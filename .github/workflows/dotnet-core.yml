@@ -21,8 +21,12 @@ jobs:
       run: dotnet build --configuration Release --no-restore
     - name: Test
       run: dotnet test --no-restore --verbosity normal
-    - name: Publish TradingView.Udf.Provider
+    - name: Publish TradingView.Udf.Provider (NuGet)
       uses: brandedoutcast/publish-nuget@v2.5.5
       with:
           PROJECT_FILE_PATH: src/TradingViewUdfProvider/TradingViewUdfProvider.csproj
           NUGET_KEY: ${{secrets.NUGET_API_KEY}}
+    - name: Publish TradingView.Udf.Provider (Github)
+      run: |
+        dotnet nuget add source https://nuget.pkg.github.com/${{ github.repository_owner }}/index.json --name github --username ${{ github.repository_owner }} --password ${{ github.token }} --store-password-in-clear-text
+        dotnet nuget push /src/**/*.nupkg --source github
