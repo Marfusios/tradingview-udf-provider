@@ -1,0 +1,10 @@
+<Project>
+
+  <!-- Project defaults -->
+
+  <PropertyGroup>
+    <Version>1.0.1</Version>
+    <AssemblyVersion>1.0.1</AssemblyVersion>
+  </PropertyGroup>
+
+</Project>
