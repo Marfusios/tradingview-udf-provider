@@ -23,3 +23,8 @@ jobs:
       run: dotnet build --configuration Release --no-restore
     - name: Test
       run: dotnet test --no-restore --verbosity normal
+    - name: Publish TradingView.Udf.Provider
+      uses: brandedoutcast/publish-nuget@v2.5.5
+      with:
+          PROJECT_FILE_PATH: src/TradingViewUdfProvider/TradingViewUdfProvider.csproj
+          NUGET_KEY: ${{secrets.NUGET_API_KEY}}
