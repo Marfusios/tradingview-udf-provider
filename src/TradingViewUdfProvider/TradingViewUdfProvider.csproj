@@ -2,6 +2,26 @@
 
   <PropertyGroup>
     <TargetFrameworks>netstandard2.0;netstandard2.1</TargetFrameworks>
+    <PackageId>TradingView.Udf.Provider</PackageId>
+    <Version>1.0.0</Version>
+    <Authors>Mariusz Kotas</Authors>
+    <Description>TradingView data provider (UDF) that integrates into ASP.NET Core application</Description>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <PackageReleaseNotes>Initial release</PackageReleaseNotes>
+    <Copyright>Copyright 2020 Mariusz Kotas. All rights reserved.</Copyright>
+    <PackageTags>TradingView chart data provider cryptocurrency exchange bitcoin extensions</PackageTags>
+    <PackageLicenseUrl>https://github.com/Marfusios/tradingview-udf-provider/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/Marfusios/tradingview-udf-provider</PackageProjectUrl>
+    <PackageIconUrl>https://raw.githubusercontent.com/Marfusios/tradingview-udf-provider/master/icon.jpg</PackageIconUrl>
+    <RepositoryUrl>https://github.com/Marfusios/tradingview-udf-provider</RepositoryUrl>
+    <RepositoryType>Git</RepositoryType>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile> 
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <FileVersion>1.0.0.0</FileVersion>
+    
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
   </PropertyGroup>
 
   <PropertyGroup>
