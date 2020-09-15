@@ -29,4 +29,4 @@ jobs:
     - name: Publish TradingView.Udf.Provider (Github)
       run: |
         dotnet nuget add source https://nuget.pkg.github.com/${{ github.repository_owner }}/index.json --name github --username ${{ github.repository_owner }} --password ${{ github.token }} --store-password-in-clear-text
-        dotnet nuget push /src/**/*.nupkg --source github
+        dotnet nuget push src/**/*.nupkg --source github
